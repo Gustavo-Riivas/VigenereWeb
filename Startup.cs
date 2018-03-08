@@ -30,7 +30,7 @@ namespace VigenereWeb
             /// Esto se llama Depency Injection
 
             /// Deben cambiar el proveedor de seguridad 
-            services.AddTransient<ISeguridadService<int>, SeguridadService>();
+            services.AddTransient<ISeguridadService<string>,VigenereSeguridadService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

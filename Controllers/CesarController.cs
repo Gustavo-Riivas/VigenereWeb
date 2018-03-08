@@ -11,11 +11,11 @@ namespace CesarWeb.Controllers
 {
     public class CesarController : Controller
     {
-        private ISeguridadService<int> _seguridadService;
+        private ISeguridadService<string> _seguridadService;
 
-        public CesarController(ISeguridadService<int> seguridadService)
+        public CesarController(ISeguridadService<string> VigenereSeguridadService)
         {
-            _seguridadService = seguridadService;
+            _seguridadService = VigenereSeguridadService;
         }
 
         

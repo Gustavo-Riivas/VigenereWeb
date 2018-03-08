@@ -8,7 +8,7 @@ namespace VigenereWeb.Models
         public string Mensaje { get; set; }
 
         [Required]
-        public int Clave { get; set; }
+        public string Clave { get; set; }
     }
 
 }
